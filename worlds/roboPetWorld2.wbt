@@ -1,0 +1,190 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/toys/protos/RubberDuck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.3925392890285886 0.33894299013167745 0.8550032491222054 1.8696596185070637
+  position 0.10739307503839965 -1.282802529168171 1.6160353626491286
+}
+TexturedBackground {
+}
+DEF Light_0 PointLight {
+  attenuation 0 0 1
+  location 0 0 1
+}
+DEF Light_1 PointLight {
+  attenuation 0 0 1
+  location 0 0.25 1
+}
+DEF Light_2 PointLight {
+  attenuation 0 0 1
+  location 0 0.5 1
+}
+DEF Light_3 PointLight {
+  attenuation 0 0 1
+  location 0 -0.25 1
+}
+DEF Light_4 PointLight {
+  attenuation 0 0 1
+  location 0 -0.5 1
+}
+DEF Light_5 PointLight {
+  attenuation 0 0 1
+  location 0.25 0 1
+}
+DEF Light_6 PointLight {
+  attenuation 0 0 1
+  location 0.5 0 1
+}
+DEF Light_7 PointLight {
+  attenuation 0 0 1
+  location -0.25 0 1
+}
+DEF Light_8 PointLight {
+  attenuation 0 0 1
+  location -0.5 0 1
+}
+DEF Light_9 PointLight {
+  attenuation 0 0 1
+  location -0.25 0.25 1
+}
+DEF Light_10 PointLight {
+  attenuation 0 0 1
+  location -0.25 0.5 1
+}
+DEF Light_11 PointLight {
+  attenuation 0 0 1
+  location -0.25 -0.25 1
+}
+DEF Light_12 PointLight {
+  attenuation 0 0 1
+  location -0.25 -0.5 1
+}
+DEF Light_13 PointLight {
+  attenuation 0 0 1
+  location -0.5 0.25 1
+}
+DEF Light_14 PointLight {
+  attenuation 0 0 1
+  location -0.5 0.5 1
+}
+DEF Light_15 PointLight {
+  attenuation 0 0 1
+  location -0.5 -0.25 1
+}
+DEF Light_16 PointLight {
+  attenuation 0 0 1
+  location -0.5 -0.5 1
+}
+DEF Light_17 PointLight {
+  attenuation 0 0 1
+  location 0.25 0.25 1
+}
+DEF Light_18 PointLight {
+  attenuation 0 0 1
+  location 0.25 0.5 1
+}
+DEF Light_19 PointLight {
+  attenuation 0 0 1
+  location 0.25 -0.25 1
+}
+DEF Light_20 PointLight {
+  attenuation 0 0 1
+  location 0.25 -0.5 1
+}
+DEF Light_21 PointLight {
+  attenuation 0 0 1
+  location 0.5 0.25 1
+}
+DEF Light_22 PointLight {
+  attenuation 0 0 1
+  location 0.5 0.5 1
+}
+DEF Light_23 PointLight {
+  attenuation 0 0 1
+  location 0.5 -0.25 1
+}
+DEF Light_24 PointLight {
+  attenuation 0 0 1
+  location 0.5 -0.5 1
+}
+RectangleArena {
+}
+Wall {
+  translation 0.38 2.65098e-07 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(7)"
+  size 0.01 0.25 0.1
+}
+Wall {
+  translation 0.13 1.01961e-08 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(6)"
+  size 0.01 0.25 0.1
+}
+Wall {
+  translation 0.12 -0.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(5)"
+  size 0.01 0.25 0.1
+}
+Wall {
+  translation -0.13 -0.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(4)"
+  size 0.01 0.25 0.1
+}
+Wall {
+  translation 0.25 0.38 0
+  name "wall(1)"
+  size 0.01 0.25 0.1
+}
+Wall {
+  translation -0.25 0.38 0
+  name "wall(2)"
+  size 0.01 0.25 0.1
+}
+Wall {
+  translation -0.38 -0.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(3)"
+  size 0.01 0.25 0.1
+}
+Wall {
+  translation 0 0.38 0
+  size 0.01 0.25 0.1
+}
+E-puck {
+  translation 0.22139090048141988 -0.17421958489609746 -0.00010118966572775223
+  rotation -8.67634249679597e-05 -0.0007659663662289728 -0.9999997028837728 3.0891275266769664
+  name "leader"
+  controller "slam_controller3"
+  turretSlot [
+    Compass {
+    }
+    GPS {
+    }
+    Camera {
+      translation 0.05 0 0
+      name "camera1"
+      recognition Recognition {
+      }
+    }
+    InertialUnit {
+    }
+    DistanceSensor {
+      translation 0 0 -0.02
+      name "front_ds"
+    }
+  ]
+}
+RubberDuck {
+  translation -0.24999984884636142 3.383794188301907e-09 0.02043801715640033
+  rotation -7.513562536057053e-12 3.304932342716595e-11 -1 1.441597769423031
+}
